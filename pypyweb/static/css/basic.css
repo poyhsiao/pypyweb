@@ -1,0 +1,217 @@
+.Action
+{
+	text-align: center;
+}
+
+.btnStyle
+{
+	cursor: pointer;
+	margin: 0px;
+	padding: 0px;
+}
+
+div.table_div
+{
+	width: 900px;
+	border: thin solid #4C515E;
+	padding: 3px;
+}
+
+table.table_main
+{
+	width: 900px;
+	background-color: #EBEBEC;
+	border: thin solid #A9A9A9;
+	border-collapse: collapse;
+	font-family: Verdana;
+	font-size: 12px;
+}
+
+table.table_main th, table.table_main td
+{
+	border: thin solid #A9A9A9;
+}
+
+table
+{
+	background-color: #EBEBEC;
+	font-family: Verdana;
+	font-size: 12px;
+	border-collapse: collapse;
+}
+
+table.caption
+{   
+	font-size: 14px;
+	font-weight: bolder;
+	background-color: #C2C0C2;
+	color: #333333;
+	border-left: thick solid #666666;
+	padding-left: 6px;
+}
+
+table caption
+{
+	font-size: 14px;
+	font-weight: bolder;
+	text-align: left;
+}
+
+th
+{
+	background-color: #EBEBEC;
+	color: black;
+	font-size: 12px;
+	font-weight: bolder;
+}
+
+.caption_out
+{
+	height: 20px;
+	background-color: #C2C0C2;
+	color: #333333;
+	text-align: left;
+	border-left: thick solid #666666;
+	padding-left: 6px;
+	margin-bottom: 3px;
+}
+
+.caption_in
+{
+	height: 20px;
+	color: #333333;
+	text-align: left;
+	background: #EBEBEC;
+	border-left: thick solid #666666;
+	padding-left: 6px;
+	padding-right: 4px;
+	margin-left: 0px;
+	margin-bottom: 3px;
+}
+
+span
+{
+    font-family: Arial
+}
+
+.itemEnabled
+{
+	//background-color: white;
+	background: url(/image/checked.gif) no-repeat center center;
+	cursor: pointer
+}
+
+.itemDisabled
+{
+	//background-color: white;
+	background: url(/image/unchecked.gif) no-repeat center center;
+	cursor: pointer
+}
+
+.dotted
+{
+	background: url(/image/S3_dot.png) repeat-x 50% 70%;
+}
+
+button.collapse_button
+{
+	position: absolute;
+	left: 700px;
+}
+
+button.button_80
+{
+	width: 80px;
+	background: url(/image/S3_bt_empty_80.png) no-repeat;
+	cursor: pointer;
+	border: none;
+	font-weight: bolder;
+	white-space: nowrap;
+}
+
+button.button_128
+{
+	width: 128px;
+	background: url(/image/S3_bt_empty_128.png) no-repeat;
+	cursor: pointer;
+	border: none;
+	font-weight: bolder;
+	white-space: nowrap;
+}
+
+button.button_200
+{
+	width: 200px;
+	background: url(/image/S3_bt_empty_200.png) no-repeat;
+	cursor: pointer;
+	border: none;
+	font-weight: bolder;
+	white-space: nowrap;
+}
+
+.button_mouseover
+{
+	font-size: 14px;
+}
+
+input
+{
+	background-color: white;
+	border-bottom: #DDDDDF 1px solid;
+	border-left: medium none;
+	border-right: #DDDDDF 1px solid;
+	border-top: medium none;
+	color: black;
+	font-family: Verdana;
+	font-size: 12px;
+}
+
+.settingtb, .tb_input
+{
+	display: none;
+}
+
+.settingtb select
+{
+	width: 100%;
+}
+
+.error_msg
+{
+	display: none;
+	text-align: center;
+	color: red;
+	font-weight: bolder;
+}
+
+.error_input
+{
+	color: red;
+	border-color: red;
+}
+
+.ToggleSort
+{
+	position: absolute;
+	left: 750px;
+	width: 150px;
+	font-size: 13px;
+	font-weight: bold;
+	font-family: Verdana;
+}
+
+.checkDragDrop
+{
+	padding-left: 20px;
+}
+
+.checkDragDrop2
+{
+	padding-left: 20px;
+	padding-bottom: 5px;
+}
+
+.Nobr
+{
+	white-space: nowrap;
+}
