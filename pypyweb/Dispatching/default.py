@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*1-
 '''
 Created on 2013/4/12
 
@@ -22,10 +23,25 @@ class HelloWorld(object):
     def index(self):
         return "Hello World!"
 
+    @cherrypy.expose
+    def look(self):
+        return "Hello World! it's looking"
+
+    ''' when you view '/look'
+    will see this result
+    '''
+
+    @cherrypy.expose
+    def user(self, user = 'BlaBla'):
+        return "Hello {0}!! Welcome".format(user)
+    ''' when you view '/user/asdf'
+    will see this result.
+    if lack of user like '/user' still can work too.
+    '''
+
 root = HelloWorld()
 ''' root will handle default page like "/"
 '''
-root.helloworld = HelloWorld()
 
 root.onepage = OnePage()
 ''' on "/onepage" they will run "OnePage" class
