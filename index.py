@@ -44,7 +44,7 @@ if __name__ == '__main__':
                        'tools.staticdir.dir': os.path.join(current_dir, 'static/script'),
                        'tools.staticdir.content_types': mime_type},
             '/image': {'tools.staticdir.on': True,
-                       'tools.staticdir.dir': os.path.join(current_dir, 'image'),
+                       'tools.staticdir.dir': os.path.join(current_dir, 'static/image'),
                        'tools.staticdir.content_types': mime_type}}
 
     cherrypy.quickstart(Root(), '/', config = conf)
