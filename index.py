@@ -23,7 +23,7 @@ if __name__ == '__main__':
     cherrypy.config.update({'environment': 'production',
                             'log.error_file': 'site.log',
                             'log.screen': True})
-    
+
     mime_type = {'js': 'text/javascript',
                  'json': 'text/javascript',
                  'css': 'text/css',
@@ -31,7 +31,8 @@ if __name__ == '__main__':
                  'gif': 'image/gif',
                  'jpg': 'image/jpeg',
                  'ico': 'image/ico',
-                 'html': 'text/html'
+                 'html': 'text/html',
+                 'htm': 'text/html'
     }
 
     conf = {'/css': {'tools.staticdir.on': True,
