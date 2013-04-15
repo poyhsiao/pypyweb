@@ -125,3 +125,18 @@ TypeError: staticdir() got an unexpected keyword argument 'content_type'
 [12/Apr/2013:18:08:22] ENGINE Started monitor thread '_TimeoutMonitor'.
 [12/Apr/2013:18:08:22] ENGINE Serving on 127.0.0.1:8080
 [12/Apr/2013:18:08:22] ENGINE Bus STARTED
+[15/Apr/2013:09:36:09] ENGINE Listening for SIGHUP.
+[15/Apr/2013:09:36:09] ENGINE Listening for SIGTERM.
+[15/Apr/2013:09:36:09] ENGINE Listening for SIGUSR1.
+[15/Apr/2013:09:36:09] ENGINE Bus STARTING
+[15/Apr/2013:09:36:09] ENGINE Started monitor thread '_TimeoutMonitor'.
+[15/Apr/2013:09:36:09] ENGINE Serving on 127.0.0.1:8080
+[15/Apr/2013:09:36:09] ENGINE Bus STARTED
+[15/Apr/2013:09:40:36] ENGINE Keyboard Interrupt: shutting down bus
+[15/Apr/2013:09:40:36] ENGINE Bus STOPPING
+[15/Apr/2013:09:40:36] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[15/Apr/2013:09:40:36] ENGINE Stopped thread '_TimeoutMonitor'.
+[15/Apr/2013:09:40:36] ENGINE Bus STOPPED
+[15/Apr/2013:09:40:36] ENGINE Bus EXITING
+[15/Apr/2013:09:40:36] ENGINE Bus EXITED
+[15/Apr/2013:09:40:36] ENGINE Waiting for child threads to terminate...
