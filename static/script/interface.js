@@ -239,6 +239,7 @@ function NewPage( oEntry )
 
 function check_session()
 {
+    return true;
 	$.ajax({
 		url: 'refresh',
 		type: 'POST',
