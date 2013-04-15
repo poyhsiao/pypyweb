@@ -1,0 +1,39 @@
+div#FwRuleDetail table
+{
+	width: 100%;
+}
+
+div#FwRuleDetail th
+{
+	width: 20%;
+}
+
+.SelTd
+{
+	width: 30%;
+}
+
+input
+{
+	width: 100%;
+}
+
+#logInput
+{
+	width: 10%;
+}
+
+#addRule
+{
+	width: 9%;
+}
+
+#logTh
+{
+	width: 6%;
+}
+
+tr.FwSetting, tr.DefaultRule
+{
+	text-align: center;
+}

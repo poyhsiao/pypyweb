@@ -1,0 +1,46 @@
+th#addRule
+{
+	width: 6%;
+}
+
+div#VsRuleDetail table
+{
+	width: 100%;
+}
+
+div#VsRuleDetail table td
+{
+	width: 35%;
+}
+
+.VsRuleTr
+{
+	text-align: left;
+}
+
+.VsRuleTh, .RsRuleTh
+{
+	padding-left: 25px;
+	width: 30%;
+}
+
+.RsRuleTr, #log
+{
+	text-align: left;
+	border-top: thin solid grey;
+}
+
+.VsRuleTr th, .RsRuleTr th
+{
+	font-size: larger;
+}
+
+tr.VsSetting
+{
+	text-align: center;
+}
+
+select
+{
+	width: 100%;
+}

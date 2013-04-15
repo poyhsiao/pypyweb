@@ -1,0 +1,14 @@
+input
+{
+	width: 100%;
+}
+
+.itemEnabled
+{
+	background: url(/image/checked.gif) no-repeat;
+}
+
+.itemDisabled
+{
+	background: url(/image/unchecked.gif) no-repeat;
+}

@@ -1,0 +1,39 @@
+div#ConnlimitRuleDetail table
+{
+	width: 100%;
+}
+
+div#ConnlimitRuleDetail th
+{
+	width: 20%;
+}
+
+.SelTd
+{
+	width: 30%;
+}
+
+input
+{
+	width: 100%;
+}
+
+#logInput
+{
+	width: 10%;
+}
+
+#addRule
+{
+	width: 7%;
+}
+
+#logTh
+{
+	width: 8%;
+}
+
+tr.ConnlimitSetting
+{
+	text-align: center;
+}

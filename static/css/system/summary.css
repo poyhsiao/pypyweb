@@ -1,0 +1,56 @@
+table tr
+{
+	height: 24px;
+	text-align: center;
+}
+
+table#sys_info_table
+{
+	border-style: solid;
+}
+
+table#sys_info_table th
+{
+	width: 30%;
+	height: 26px;
+	border-style: none;
+}
+
+table#sys_info_table td
+{
+	height: 26px;
+	border-style: none;
+}
+
+.dotted
+{
+	width: 40%;
+}
+
+.info
+{
+	color: black;
+	width: 30%;
+	white-space: nowrap;
+}
+
+#detect_info
+{
+	position: absolute;
+	left: 670px;
+	white-space: nowrap;
+}
+
+#detect_ok
+{
+	background: url(/image/state-alive.gif) no-repeat left center;
+	padding-left: 25px;
+	margin-right: 30px;
+}
+
+#detect_fail
+{
+	background: url(/image/state-dead.gif) no-repeat left center;
+	padding-left: 25px;
+	margin-right: 30px;
+}

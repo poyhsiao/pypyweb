@@ -1,0 +1,54 @@
+#AccountSetting table
+{
+	width: 100%;
+}
+
+#update_key, #input_name, #input_pw, #confirm_pw
+{
+	width: 100%;
+}
+
+#status_info                
+{                           
+	position: absolute;
+	left: 720px;
+	white-space: nowrap;
+}
+
+#on_line
+{
+	background: url(/image/state-alive.gif) no-repeat left center;
+	padding-left: 20px;
+	margin-right: 25px;
+}
+
+#off_line
+{
+	background: url(/image/state-dead.gif) no-repeat left center;
+	padding-left: 20px;
+	margin-right: 25px;
+}
+
+#acc_name, #acc_group
+{
+	width: 18%;
+}
+
+#acc_status
+{
+	width: 9%;
+}
+
+table#FwUpdateTb
+{
+	width: 100%;
+	border-style : hidden;
+	border-collapse: collapse;
+}
+
+#version
+{
+	font-size: 13px;
+	font-weight: bold;
+	color: midnightblue;
+}

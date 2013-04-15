@@ -1,0 +1,17 @@
+table.table_main th, table.table_main td
+{
+	border: none;
+}
+
+select
+{
+	width: 40%;
+}
+
+textarea
+{
+	width: 960px;
+	background-color:white;
+	margin-top: 5px;
+	overflow-x: auto;
+}

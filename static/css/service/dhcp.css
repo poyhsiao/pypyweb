@@ -1,0 +1,21 @@
+input
+{
+	width: 100%;
+}
+
+.dhcpTh
+{
+	width: 30%;
+}
+
+th#addDhcpRange, th#addStaticMapping
+{
+	width: 10%;
+}
+
+table#DhcpRangeTable, table#StaticMappingTable
+{
+	width: 100%;
+	border-style : hidden;
+	border-collapse: collapse;
+}

@@ -1,0 +1,54 @@
+#sel_wan
+{
+	width: 20%;
+}
+
+#oSheetTemplate
+{
+	display: none;
+}
+
+div#NatRuleDetail table
+{
+	width: 100%;
+}
+
+div#NatRuleDetail th
+{
+	width: 20%;         
+}
+
+.SelTd
+{
+	width: 30%;
+}
+
+input
+{
+	width: 100%;        
+}
+
+#logInput
+{
+	width: 10%;
+}
+
+.addNatRule
+{
+	width: 8%;
+}
+
+#logTh
+{
+	width: 6%;
+}
+
+table#SelWanTb th, table#SelWanTb td
+{
+	border: none;
+}
+
+tr.NatRuleSettingTr, tr.DefaultRule
+{
+	text-align: center;
+}

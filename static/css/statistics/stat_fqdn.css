@@ -1,0 +1,20 @@
+select
+{
+	width: 50%;
+}
+
+table#FqdnSettingTb th, table#FqdnSettingTb td
+{
+	border: none;
+}
+
+#StatThead th
+{
+	height: 24px;
+}
+
+tr.StatFqdn
+{
+	text-align: center;
+	height: 22px;
+}

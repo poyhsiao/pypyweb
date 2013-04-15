@@ -1,0 +1,24 @@
+#oSheetTemplate
+{
+	display: none;
+}
+
+#oAlways
+{
+	width: 20%;
+}
+
+table#SelWanTb th, table#SelWanTb td
+{
+	border: none;
+}
+
+.addIcmpList, .addTcpList
+{ 
+	width: 15%;
+}
+
+input, select
+{
+	width: 80%;
+}

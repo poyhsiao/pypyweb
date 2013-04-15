@@ -1,0 +1,19 @@
+.chart-box
+{
+	margin-bottom: 1em;
+}
+
+table
+{
+	background-color: white;
+}
+
+table.table_main th, table.table_main td
+{
+	border: none;
+}
+
+select
+{
+	width: 90%;
+}

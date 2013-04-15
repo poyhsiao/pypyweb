@@ -1,0 +1,87 @@
+/* Network Header */
+body
+{
+	margin: 0;
+	padding: 0;
+	white-space: nowrap;
+}
+
+table#tablist
+{
+	width: 100%;
+	height: 100%;
+	border-collapse: collapse;
+	padding: 0;
+	margin: 0;
+	background-color: black;
+}
+
+table#tablist span {
+	margin: 0;
+	font-size: 12px;
+	font-weight: bold;
+	cursor: default;
+}
+
+.tabon
+{
+	color: #FFFFFF;
+	background-color: black;
+	border-bottom: 3px #CC0000 solid;
+}
+
+.taboff
+{
+	color: #999999;
+	background-color: black;
+	border-bottom: thin black solid;
+}
+
+.tabinside
+{
+	border-right: thin solid white;
+}
+
+/* Network Content */
+#o3GTemplate, #oSheetTemplate, .deleteWanStaticIP, .upWanStaticIP, .downWanStaticIP
+{
+	display: none;
+}
+
+#WanSheet, #DmzSheet, #LanSheet
+{
+	padding: 8px;
+}
+
+table#SelWanTb th, table#SelWanTb td
+{
+	border: none;
+}
+
+table.wan_static_settings, table.public_ip_passthrough_settings
+{
+	width: 100%;
+	border-style: hidden;
+	border-collapse: collapse;
+}
+
+input, select
+{
+	width: 80%;
+}
+
+.itemEnabled
+{
+	background: url(/image/checked.gif) no-repeat;
+}
+
+.itemDisabled
+{
+	background: url(/image/unchecked.gif) no-repeat;
+}
+
+.ToggleSort2
+{
+	font-weight: bold;
+	font-family: Verdana;
+}

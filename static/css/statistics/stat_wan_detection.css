@@ -1,0 +1,20 @@
+select
+{
+	width: 80%;
+}
+
+table#WanSettingTb th, table#WanSettingTb td
+{
+	border: none;
+}
+
+#StatThead th
+{
+	height: 24px;
+}
+
+tr.StatWanDetection
+{
+	text-align: center;
+	height: 22px;
+}

@@ -1,0 +1,4 @@
+A:link          { color: #FCD300; text-decoration: none; }
+A:visited       { color: #FCD300; text-decoration: none; }
+A:active        { color: #FCD300; text-decoration: none; }
+A:hover         { color: red; text-decoration: underline; }

@@ -1,0 +1,39 @@
+#oSheetTemp
+{
+	display: none;
+}
+
+table#SelGroupTb th, table#SelGroupTb td
+{
+	border: none;
+}
+
+#sel_group
+{
+	width: 25%;
+}
+
+input
+{
+	width: 100%;
+}
+
+tr.IpAddrSettingTr, tr.ServiceSettingTr
+{
+	text-align: center;
+}
+
+#IpAddrRule table, #ServiceRule table
+{
+	width: 100%;
+}
+
+#IpAddrRule th, #ServiceRule th
+{
+	width: 22%;
+}
+
+#AddrTd, #ServiceTd
+{
+	width: 50%;
+}

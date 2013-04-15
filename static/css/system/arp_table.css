@@ -1,0 +1,19 @@
+#FixedRule table
+{
+	width: 100%;
+}
+
+input
+{
+	width: 100%;
+}
+
+th.addFixed
+{
+	width: 10%;
+}
+
+tr.FixedSettingTr
+{
+	text-align: center;
+}

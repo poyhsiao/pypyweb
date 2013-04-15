@@ -1,0 +1,19 @@
+input, select
+{
+	width: 50%;
+}
+
+#oSheetTemplate
+{
+	display: none;
+}
+
+.itemEnabled
+{
+	background: url(/image/checked.gif) no-repeat;
+}
+
+.itemDisabled
+{
+	background: url(/image/unchecked.gif) no-repeat;
+}

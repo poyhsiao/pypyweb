@@ -1,0 +1,54 @@
+#sel_method
+{
+	width: 30%;
+}
+
+#input_param, #input_aging
+{
+	width: 30%;
+}
+
+div#ArRuleDetail table
+{
+	width: 100%;
+}
+
+.ArRuleDetailTh
+{
+	width: 20%;
+}
+
+.SelTd
+{
+	width: 30%;
+}
+
+div#ArRuleDetail input
+{                     
+	width: 100%;
+}
+
+div#ArRuleDetail .checkboxInput
+{                     
+	width: 10%;
+}
+
+#addRule
+{
+	width: 6%;
+}
+
+.checkboxTh
+{
+	width: 9%;
+}
+
+#logTh
+{
+	width: 6%;
+}
+
+tr.ArSetting, tr.DefaultRule
+{
+	text-align: center;
+}
