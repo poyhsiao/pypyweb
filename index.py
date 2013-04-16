@@ -25,12 +25,12 @@ if __name__ == '__main__':
                             'log.screen': True})
 
     mime_type = {'js': 'text/javascript',
-                 'json': 'text/javascript',
+                 'json': 'application/json',
                  'css': 'text/css',
                  'png': 'image/png',
                  'gif': 'image/gif',
                  'jpg': 'image/jpeg',
-                 'ico': 'image/ico',
+                 'ico': 'image/x-icon',
                  'html': 'text/html',
                  'htm': 'text/html'
     }
@@ -46,6 +46,9 @@ if __name__ == '__main__':
                        'tools.staticdir.content_types': mime_type},
             '/image': {'tools.staticdir.on': True,
                        'tools.staticdir.dir': os.path.join(current_dir, 'static/image'),
+                       'tools.staticdir.content_types': mime_type},
+            '/data': {'tools.staticdir.on': True,
+                       'tools.staticdir.dir': os.path.join(current_dir, 'static/data'),
                        'tools.staticdir.content_types': mime_type}}
 
     cherrypy.quickstart(Root(), '/', config = conf)

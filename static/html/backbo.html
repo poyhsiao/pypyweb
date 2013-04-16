@@ -7,7 +7,7 @@
        Remove this if you use the .htaccess -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-  <title>backbo</title>
+  <title>Learning About Backbone.js Views</title>
   <meta name="description" content="" />
   <meta name="author" content="Kim Hsiao" />
 
@@ -17,105 +17,22 @@
   <link rel="shortcut icon" href="/favicon.ico" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 </head>
-
-<!DOCTYPE HTML>
-<html lang="en-US">
-<head>
-    <meta charset="UTF-8">
-    <title>Learning About Backbone.js Views</title>
-</head>
 <body>
-
-<div id="container">
-    <button>Load</button>
-    <ul id="list">
-    </ul>
-</div>
-
-<div id="list-template">
-    <ul></ul>
-</div>
-
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript" src="http://documentcloud.github.com/underscore/underscore-min.js"></script>
-<script type="text/javascript" src="http://documentcloud.github.com/backbone/backbone-min.js"></script>
-<script type="text/javascript">
-//<!--    
-myModel = new Backbone.Model({
-    data:[
-        {title: 'Login', src: 'login'},
-        {title: 'System', subitems: [
-            {title: 'Summary', src: 'summary'},
-            {title: 'DNS', src: 'dns'},
-            {title: 'VLAN', src: 'vlan'},
-            {title: 'Bridge', src: 'bridge'},
-            {title: 'IP Address', src: 'ip'},
-            {title: 'Routing Table', src: 'route'},
-            {title: 'ARP Table', src: 'arp'},
-            {title: 'Date/Time', src: 'date'},
-            {title: 'Diagnostic Tools', src: 'diagnostic'},
-            {title: 'Administration', src: 'admin'}
-        ]},
-        {title: 'Service', subitems: [
-            {title: 'SNMP', src: 'snmp'},
-            {title: 'Email', src: 'email'},
-            {title: 'VRRPv2', src: 'vrrp'},
-            {title: 'SLB', src: 'slb'},
-            {title: 'NAT64', src: 'nat64'}
-        ]},
-        {title: 'Statistics', subitems: [
-            {title: 'Counters', src: 'counters'},
-            {title: 'Rates', src: 'rates'},
-            {title: 'Rersistence Info', src: 'persistence'}
-        ]},
-        {title: 'Log', subitems: [
-            {title: 'View', src: 'view'},
-            {title: 'Syslog', src: 'syslog'},
-        ]},
-        {title: 'Wizard', src: 'wizard'}
-    ]
-});
-
-var myView = Backbone.View.extend({
-    initialize: function () {
-        console.log('create view');
-    },
-    el: '#container button',
-    events: {
-        "click": "render"
-    },
-    template: $('#list-template'),
-    extraData: function(d, cls) {
-        var me = this,
-        cl = ('undefined' == cls) ? '' : '.' + cls;
-        if(d.hasOwnProperty('subitems')) {
-            //for(var k in d) {
-            //$.each(d, function(k, v) {
-                var li = $('<li/>').text(d.title).appendTo(me.template.children('ul' + cl));
-                //console.log(k);
-                cl = 'ul_' + d.title;
-                $('<ul/>').attr('class', cl).appendTo(li);
-                me.extraData(d.subitems, cl);
-                //}
-            console.log(cl);
-            //me.extraData(d.subitems, cl);
-        } else {
-            $('<li/>').text(d.title).wrapInner('<a href=' + d.src + ' />').appendTo(me.template.children('ul' + cl).last());
-           }
-    },
-    render: function() {
-        var data = this.model.get('data'), me = this;
-        $.each(data, function(k, v) {
-            return me.extraData(v);
-           });
-        
-    }
-});
-
-var view = new myView({ model: myModel });
-
-//-->
-</script>
+    
+    <div id="container">
+        <button>Load</button>
+        <ul id="list">
+        </ul>
+    </div>
+    
+    <div id="list-template">
+        <ul class="ul_topmenu"></ul>
+    </div>
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://documentcloud.github.com/underscore/underscore-min.js"></script>
+    <script type="text/javascript" src="http://documentcloud.github.com/backbone/backbone-min.js"></script>
+    <script type="text/javascript" src="/script/init.js"></script>
 </body>
 </html>
 

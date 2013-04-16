@@ -1,0 +1,36 @@
+{
+    "items":[
+        {"title": "System", "subitems": [
+            {"title": "Summary", "src": "summary"},
+            {"title": "DNS", "src": "dns"},
+            {"title": "VLAN", "src": "vlan"},
+            {"title": "Bridge", "src": "bridge"},
+            {"title": "IP Address", "src": "ip"},
+            {"title": "Routing Table", "src": "route"},
+            {"title": "ARP Table", "src": "arp"},
+            {"title": "Date/Time", "src": "date"},
+            {"title": "Diagnostic Tools", "src": "diagnostic"},
+            {"title": "Administration", "src": "admin"}
+        ]},
+        {"title": "Service", "subitems": [
+            {"title": "SNMP", "src": "snmp"},
+            {"title": "Email", "src": "email"},
+            {"title": "VRRPv2", "src": "vrrp"},
+            {"title": "SLB", "src": "slb"},
+            {"title": "NAT64", "src": "nat64"}
+        ]},
+        {"title": "Statistics", "subitems": [
+            {"title": "Counters", "src": "counters"},
+            {"title": "Rates", "src": "rates"},
+            {"title": "Rersistence Info", "src": "persistence"}
+        ]},
+        {"title": "Log", "subitems": [
+            {"title": "View", "src": "view"},
+            {"title": "Syslog", "src": "syslog"}
+        ]}
+    ],
+   "opt": [
+        {"title": "Login", "src": "login"},
+        {"title": "Wizard", "src": "wizard"}
+    ]
+}
