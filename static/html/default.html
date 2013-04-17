@@ -23,7 +23,14 @@
   <link rel="stylesheet" href="/css/bootstrap.css" type="text/css" />
   <link rel="stylesheet" href="/css/bootstrap-responsive.css" type="text/css" />
   <style>
-    body {margin: 0px; padding: 0px; }
+    body {
+        color: black;
+        font-family: tahoma;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 23px;
+        margin : 0;
+    }
     div.head
     {
         text-align: center;
@@ -33,13 +40,91 @@
     {
         text-align: left;
     }
-    div.user-op
-    {
+    div.user-op {
         text-align: right;
+        padding-right: 20px;
     }
-    div.leftMenu { text-align: left; }
-    div.mainContent { text-align: center; }
-    div.footer { text-align: center; }
+    div.leftMenu { 
+        text-align: left;
+        margin: 0px;
+    }
+    div.mainContent {
+        text-align: center;
+        border: 1px ridge #000;
+        /* css3 round corner of the borader */
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        /* CSS3 Box-shadow code: */
+        box-shadow: 3px 3px 0px #a4a4a4;
+        -webkit-box-shadow: 3px 3px 0px #a4a4a4;
+        -moz-box-shadow: 3px 3px 0px #a4a4a4;
+        /* box-shadow for ie6 - ie8 */
+        filter: progid:DXImageTransform.Microsoft.DropShadow(OffX=3, OffY=3, Color=#a4a4a4);
+        z-index: 1;
+        margin: 0 0 0 19px;
+        height: 300px;
+    }
+    div.footer {
+        text-align: center;
+        /*
+        bottom: 0px;
+        position: fixed;
+        */
+    }
+    #menu-template ul {
+        list-style-type: none;
+        margin-left: 2px;
+    }
+    #menu-template ul .MainMenu {
+        font-size: 14px;
+        font-weight: bold;
+        padding: 2px 0px 2px 10px;
+        border: 1px solid #000;
+    }
+    #menu-template li {
+        list-style: none;
+        margin-left: 2px;
+        cursor: pointer;
+    }
+    #menu-template li .SubMenu {
+        background: url("/image/S3_arrow_dark.png") no-repeat scroll left center #DCDCDC;
+        font-size: 11px;
+        font-weight: normal;
+        padding: 2px 0px 2px 10px;
+        border: 1px solid #000;
+    }
+    .inactive {
+        display: none;
+    }
+    div.openMenu {
+        background: url("/image/S3_arrow_down.png") no-repeat scroll left center transparent;
+    }
+    div.closeMenu {
+        background: url("/image/S3_arrow_right.png") no-repeat scroll left center transparent;
+    }
+    div.itemHover {
+        background: url("/image/S3_arrow_dark.png") no-repeat scroll left center #A9A9A9;
+        font-size: 11px;
+        font-weight: normal;
+        padding: 2px 0px 2px 10px;
+        border: 1px solid #000;
+        color: #FFF;
+    }
+    div.selectItem {
+        background: url("/image/S3_arrow_dark.png") no-repeat scroll left center #696969;
+        font-size: 11px;
+        font-weight: normal;
+        padding: 2px 0px 2px 10px;
+        border: 1px solid #000;
+        color: #FFF;
+    }
+    div.borderArrow {
+        display: none;
+    }
+    span.paganation {
+        color: gray;
+    }
   </style>
 </head>
 
@@ -47,13 +132,13 @@
   <div class="head row-fluid">
       <div class="span12">
           <span class="header-img">
-              <span id="LogoBarBG1">
+              <span id="LogoBarBG1" class="visible-desktop">
                   <img alt="XteraLink logo bar 1" src="/image/S3_header_BG1.png" />
               </span>
-              <span id="LogoBarBG2">
+              <span id="LogoBarBG2" class="visible-desktop">
                   <img alt="XteraLink logo bar 2" src="/image/S3_header_BG2.png" />
               </span>
-              <span id="AscenLinkLogo">
+              <span id="AscenLinkLogo" class="visible-desktop">
                   <img alt="XteraLink banner" src="/image/banner.png" />
               </span>
               <span id="XteraLogo">
@@ -69,27 +154,38 @@
           <span id="IdentityInformation">admin@192.168.0.111</span>
           <span id="oLogout">登出</span>
       </div>
-      <div class="span4 offset3 header user-op">
+      <div class="span6 offset2 header user-op">
+          <span class="paganation">
+                <span class="maintitle"></span>
+                <span class="indecator">
+                    <img alt="arrow right" src="/image/S3_arrow_right.png" />
+                </span>
+                <span class="subtitle"></span>
+          </span>
           <span id="oApply">套用設定</span>
           <span id="oReload">重新載入</span>
           <span id="oHelp">說明</span>
       </div>
   </div>
   <div class="body container-fluid">
-      <div class="span4 leftMenu">
-          <span>Left Menu</span>
+      <div class="span3 leftMenu">
+          <!--span>Left Menu</span-->
           <div id="menu-template">
-              <div class="menu_root MenuBar" />
+              <!--div class="menu_root MenuBar" /-->
+              <ul class="ul_topmenu" />
           </div>
       </div>
-      <div class="span8 mainContent">
+      <div class="span9 mainContent">
           <span>Main Content</span>
       </div>
   </div>
-  <div class="footer row-fluid">
+  <div class="footer row-fluid  navbar-fixed-bottom visible-desktop">
       <div class="footer span12">
           <span id="PageTailer" />
       </div>
+  </div>
+  <div class="borderArrow">
+      <img src="/image/Content/index_10.png" />
   </div>
   <script type="text/javascript" src="/script/jquery.js"></script>
   <script type="text/javascript" src="/script/init.js"></script>
