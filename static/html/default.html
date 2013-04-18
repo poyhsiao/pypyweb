@@ -48,7 +48,7 @@
         text-align: left;
         margin: 0px;
     }
-    div.mainContent {
+    div.popContent {
         text-align: center;
         border: 1px ridge #000;
         /* css3 round corner of the borader */
@@ -62,8 +62,11 @@
         /* box-shadow for ie6 - ie8 */
         filter: progid:DXImageTransform.Microsoft.DropShadow(OffX=3, OffY=3, Color=#a4a4a4);
         z-index: 1;
-        margin: 0 0 0 19px;
-        height: 300px;
+        margin: 0 0 0 -60px;
+        background: #fff;
+        display: none;
+        position: relative;
+        top: 5px;
     }
     div.footer {
         text-align: center;
@@ -79,7 +82,7 @@
     #menu-template ul .MainMenu {
         font-size: 14px;
         font-weight: bold;
-        padding: 2px 0px 2px 10px;
+        padding: 4px 0px 4px 10px;
         border: 1px solid #000;
     }
     #menu-template li {
@@ -120,6 +123,8 @@
         color: #FFF;
     }
     div.borderArrow {
+        position: absolute;
+        z-index: 1;
         display: none;
     }
     span.paganation {
@@ -149,7 +154,7 @@
           </span>
       </div>
   </div>
-  <div class="row-fluid">
+  <div class="row-fluid info">
       <div class="span4 header IdentityInformation">
           <span id="IdentityInformation">admin@192.168.0.111</span>
           <span id="oLogout">登出</span>
@@ -176,10 +181,12 @@
           </div>
       </div>
       <div class="span9 mainContent">
-          <span>Main Content</span>
+          <div class="popContent">
+              <span>Main Content</span>
+          </div>
       </div>
   </div>
-  <div class="footer row-fluid  navbar-fixed-bottom visible-desktop">
+  <div class="footer row-fluid  navbar-fixed-bottom hidden-phone">
       <div class="footer span12">
           <span id="PageTailer" />
       </div>
