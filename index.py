@@ -35,7 +35,11 @@ if __name__ == '__main__':
                  'htm': 'text/html'
     }
 
-    conf = {'/css': {'tools.staticdir.on': True,
+    conf = {'/skeleton': {'tools.staticdir.on': True,
+                          # this is just a temp path which should be remove when the test is completed
+                     'tools.staticdir.dir': os.path.join(current_dir, 'static/skeleton'),
+                     'tools.staticdir.content_types': mime_type},
+            '/css': {'tools.staticdir.on': True,
                      'tools.staticdir.dir': os.path.join(current_dir, 'static/css'),
                      'tools.staticdir.content_types': mime_type},
             '/html': {'tools.staticdir.on': True,

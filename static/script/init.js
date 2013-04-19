@@ -55,26 +55,26 @@ $.when(
     	       $(this).toggleClass('itemHover').toggleClass('SubMenu');
     	      }
     	});
-    	// initial open the first menu item
+
     })).done(function() {
-        /* initial and run all the click event */
         var main = $('div.MainMenu')[0];
         $(main).trigger('click');
         $(main).siblings().find('div:first').addClass('itemHover').trigger('click').removeClass('SubMenu');
+        // initial open the first menu item
 });
  
 var extraData = function(d, cls) {
     /* handling main menu as tree structure */
     var template = $('#menu-template'), cl = ('undefined' == typeof(cls)) ? 'ul_topmenu' : cls;
     if(d.hasOwnProperty('subitems')) {
-        var li = $('<li/>').text(d.title).wrapInner('<div class="MainMenu closeMenu" opt="' + d.title + '" />').appendTo(template.find('ul.' + cl));
+        var li = $('<li/>').addClass('boxShadow').text(d.title).wrapInner('<div class="MainMenu closeMenu" opt="' + d.title + '" />').appendTo(template.find('ul.' + cl));
         cl = 'ul_' + d.title;
         $('<ul/>').addClass(cl + ' inactive').appendTo(li);
         for(var x in d.subitems) {
             extraData(d.subitems[x], cl);
            }
     } else {
-        $('<li/>').text(d.title).wrapInner('<div class="SubMenu" opt="' + d.src + '" />').appendTo(template.find('ul.' + cl));
+        $('<li/>').addClass('boxShadow').text(d.title).wrapInner('<div class="SubMenu" opt="' + d.src + '" />').appendTo(template.find('ul.' + cl));
      }
 };
 
