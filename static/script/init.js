@@ -5,7 +5,7 @@
  */
 $.when(
     $.getScript('/script/jquery-ui.js'),
-    $.getScript('/script/bootstrap.js'),
+    //$.getScript('/script/bootstrap.js'),
     $.getScript('/script/underscore.js'),
     $.getScript('/script/backbone.js'),
     /* load all necessary javascript once */

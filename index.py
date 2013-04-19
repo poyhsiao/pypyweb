@@ -35,24 +35,35 @@ if __name__ == '__main__':
                  'htm': 'text/html'
     }
 
-    conf = {'/skeleton': {'tools.staticdir.on': True,
-                          # this is just a temp path which should be remove when the test is completed
-                     'tools.staticdir.dir': os.path.join(current_dir, 'static/skeleton'),
-                     'tools.staticdir.content_types': mime_type},
-            '/css': {'tools.staticdir.on': True,
+    conf = {'/css': {'tools.staticdir.on': True,
+                     'tools.caching.on': True,
+                     'tools.caching.delay': 3600,
                      'tools.staticdir.dir': os.path.join(current_dir, 'static/css'),
-                     'tools.staticdir.content_types': mime_type},
+                     'tools.staticdir.content_types': mime_type,
+                     'tools.gzip.mime_types': mime_type},
             '/html': {'tools.staticdir.on': True,
+                      'tools.caching.on': True,
+                      'tools.caching.delay': 3600,
                       'tools.staticdir.dir': os.path.join(current_dir, 'static/html'),
-                      'tools.staticdir.content_types': mime_type},
+                      'tools.staticdir.content_types': mime_type,
+                      'tools.gzip.mime_types': mime_type},
             '/script': {'tools.staticdir.on': True,
-                       'tools.staticdir.dir': os.path.join(current_dir, 'static/script'),
-                       'tools.staticdir.content_types': mime_type},
+                        'tools.caching.on': True,
+                        'tools.caching.delay': 3600,
+                        'tools.staticdir.dir': os.path.join(current_dir, 'static/script'),
+                        'tools.staticdir.content_types': mime_type,
+                        'tools.gzip.mime_types': mime_type},
             '/image': {'tools.staticdir.on': True,
+                       'tools.caching.on': True,
+                       'tools.caching.delay': 3600,
                        'tools.staticdir.dir': os.path.join(current_dir, 'static/image'),
-                       'tools.staticdir.content_types': mime_type},
+                       'tools.staticdir.content_types': mime_type,
+                       'tools.gzip.mime_types': mime_type},
             '/data': {'tools.staticdir.on': True,
-                       'tools.staticdir.dir': os.path.join(current_dir, 'static/data'),
-                       'tools.staticdir.content_types': mime_type}}
+                      'tools.caching.on': True,
+                      'tools.caching.delay': 3600,
+                      'tools.staticdir.dir': os.path.join(current_dir, 'static/data'),
+                      'tools.staticdir.content_types': mime_type,
+                      'tools.gzip.mime_types': mime_type}}
 
     cherrypy.quickstart(Root(), '/', config = conf)
